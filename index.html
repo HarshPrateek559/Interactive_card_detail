@@ -16,36 +16,58 @@
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+  <main class="card">
+    <section class="image">
+      <section class="imgback">
+        <img src="images/bg-card-back.png" alt="Back of the card" class="back">
+        <p class="cvv">000</p>
+      </section>
+      <section class="imgfront">
+        <img src="images/bg-card-front.png" alt="Front of the card" class="front">
+        <img src="images/card-logo.svg" alt="logo of the card" class="logo">
+        <div class="number">
+            <p class="num">0000</p>
+            <p class="num">0000</p>
+            <p class="num">0000</p>
+            <p class="num">0000</p>
+        </div>
+        <div class="details">
+          <p class="name">JANE FOSTER</p>
+          <p class="expiry">00/00</p>
+        </div>
+      </section>
+    </section>
+    <section class="form">
+      <div class="nameForm">
+        <h6 class="heading">
+          CARDHOLDER NAME
+        </h6>
+        <input type="text" class="input long" placeholder="e.g. Jane Foster"/>
+      </div>
+      <div class="numberForm">
+        <h6 class="heading">
+          CARD NUMBER
+        </h6>
+        <input type="text" class="input long" placeholder="e.g. 1234 5678 9123 0000"/>
+      </div>
+      <div class="other">
+        <h6 class="heading">
+          EXP. DATE (MM/YY)  CVV</h6>
+          <div>
+            <input type="text" placeholder="MM" class="input short">
+            <input type="text" placeholder="YY" class="input short">
+            <input type="text" placeholder="CVV" class="input med">
+          </div>
+      </div>
+      <button type="submit">Confirm</button>
+    </section>
+  </main>
 
   <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://twitter.com/HarshPrateek98">Harsh Prateek</a>.
   </div>
 </body>
 <script src="script.js"></script>
