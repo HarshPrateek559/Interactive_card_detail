@@ -133,6 +133,7 @@ body {
 }
 
 button {
+    font-family: 'Space Grotesk', sans-serif;
     background: rgb(66, 0, 66);
     color: white;
     width: 80vw;
