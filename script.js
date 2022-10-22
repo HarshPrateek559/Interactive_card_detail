@@ -14,7 +14,12 @@ let ntext = document.querySelector('.ntext');
 // Variables to change the card number
 let num = document.querySelector('.num');
 let numtext = document.querySelector('.numtext');
-console.log(num.innerText)
+
+// Variables to confirm the form
+let btn = document.querySelector('button');
+let form = document.querySelector('.form');
+let confirm = document.querySelector('.confirm');
+
 setInterval(() => {
     
     // Printing the date given by the user
@@ -58,9 +63,9 @@ setInterval(() => {
         }
         else {
             if (numtext.value.length % 4 == 0) {
-                numtext.value += ' ';
-                num.innerText = numtext.value;
-                numtext.value = numtext.value.replace(/\s/g, "");
+                let x = numtext.value;
+                num.innnerText = "&nbsb;" + x;
+
             }
             else {
                 num.innerText = numtext.value;
@@ -70,4 +75,26 @@ setInterval(() => {
     else {
         numtext.value = numtext.value.substring(0,16);
     }
+
+    btn.onclick = () => {
+        if (ctext.value && years && months && numtext && ntext) {
+                if (confirm.style.display = 'none') {
+                btn.innerHTML = 'Continue';
+                confirm.style.display = 'flex';
+                form.style.display = 'none';
+            }
+            else {
+                btn.innerHTML = 'Confirm';
+                confirm.style.display = 'none';
+                form.style.display = 'flex';
+            }
+        }
+        
+        else {
+            alert("Please enter the details correctly.")
+        }
+    }
+
 }, 10);
+
+
