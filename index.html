@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -10,10 +12,17 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <main class="card">
@@ -34,43 +43,46 @@
         </div>
       </section>
     </section>
-    <section class="form">
-      <div class="nameForm">
-        <h6 class="heading">
-          CARDHOLDER NAME
-        </h6>
-        <input type="text" class="input long ntext" placeholder="e.g. Jane Foster"/>
-      </div>
-      <div class="numberForm ">
-        <h6 class="heading">
-          CARD NUMBER
-        </h6>
-        <input type="text" class="input long numtext" placeholder="e.g. 1234 5678 9123 0000"/>
-      </div>
-      <div class="other">
-        <h6 class="heading">
-          EXP. DATE (MM/YY)  CVV</h6>
+    <div class="pc">
+      <section class="form">
+        <div class="nameForm">
+          <h6 class="heading">
+            CARDHOLDER NAME
+          </h6>
+          <input type="text" class="input long ntext" placeholder="e.g. Jane Foster" />
+        </div>
+        <div class="numberForm ">
+          <h6 class="heading">
+            CARD NUMBER
+          </h6>
+          <input type="text" class="input long numtext" placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+        <div class="other">
+          <h6 class="heading">
+            EXP. DATE (MM/YY) CVV</h6>
           <div class="">
             <input type="text" placeholder="MM" class="input short mtext">
             <input type="text" placeholder="YY" class="input short ytext">
             <input type="text" placeholder="CVV" class="input med ctext">
           </div>
-      </div>
-    </section>
-    <section class="confirm">
-      <img src="images/icon-complete.svg" alt="">
-      <h1 class="heading">THANK YOU!</h1>
-      <p>We've added your card details</p>
-    </section>
-    <button>Confirm</button>
+        </div>
+      </section>
+      <section class="confirm">
+        <img src="images/icon-complete.svg" alt="">
+        <h1 class="heading">THANK YOU!</h1>
+        <p>We've added your card details</p>
+      </section>
+      <button>Confirm</button>
+    </div>
   </main>
 
   <!-- Completed state start -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://twitter.com/HarshPrateek98">Harsh Prateek</a>.
   </div>
 </body>
 <script src="script.js"></script>
+
 </html>

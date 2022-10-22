@@ -143,6 +143,7 @@ button {
     border-radius: 10px;
     font-size: 5vw;
     margin-bottom: 3vh;
+    cursor: pointer;
 }
 
 .confirm {
@@ -170,4 +171,166 @@ button {
     font-size: 5vw; 
     font-weight: 600;
     color: gray;
+}
+
+@media only screen and (min-width: 450px) {
+    body {
+        overflow: hidden !important;
+    }
+
+    .image {
+        height: 100vh;
+        width: 30vw;
+        background: url('images/bg-main-desktop.png');
+        background-size: cover;
+    }
+
+    .card {
+        overflow: hidden !important;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .back {
+        width: 33vw;
+        height: auto;
+        position: absolute;
+        top: 60vh;
+        left: 15vw;
+        z-index: 0;
+        border-radius: 15px;
+    }
+
+    .cvv {
+        font-size: 1.3vw;
+        position: absolute;
+        top: 74.9vh;
+        left: 41vw;
+        width: fit-content;
+        z-index: 1;
+    }
+    
+    .front {
+        width: 33vw;
+        height: auto;
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        z-index: 0;
+        border-radius: 15px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 13vh;
+        left: 12vw;
+        width: 6vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    .number {
+        position: absolute;
+        z-index: 1;
+        top: 28vh;
+        left: 12vw;
+        font-size: 1.6vw;
+        letter-spacing: 0.6vw;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        width: 30vw;
+    }
+    
+    .details {
+        position: absolute;
+        top: 38vh;
+        left: 12vw;
+        z-index: 1;
+        font-size: 1vw;
+        width: 30vw;
+    }
+
+    .pc {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        height: 50vh;
+        width: 30vw;
+        margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    button {
+        display: block;
+        width: 30vw;
+        font-size: 1.8vw;
+    }
+
+    .long {
+        width: 30vw;
+    }
+    
+    .short {
+        width: 6vw;
+    }
+    
+    .med {
+        width: 11vw;
+    }
+
+    .heading {
+        font-size: 1vw;
+        text-align: left;
+        width: 30vw;
+        margin-bottom: 0.4vh;
+    }
+    
+    .input {
+        height: 4.6vh;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid gray;
+        letter-spacing: 0.6vw;
+    }
+
+    .confirm {
+        height: 60vh;
+        width: 30vw;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .confirm img {
+        width: 10vw;
+        height: auto;
+        margin: 0;
+        margin-bottom: 7vh;
+    }
+
+    .confirm .heading{
+        font-size: 3vw;
+        margin: 0;
+        margin-bottom: 1vh;
+    }
+    
+    .confirm p {
+        font-size: 1.3vw;
+    }
 }
